@@ -19,6 +19,9 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# NPM lock file
+package-lock.json
+
 # Optional npm cache
 .npm/
 
