@@ -1,0 +1,21 @@
+<div class="login-container">
+  <h2>Login</h2>
+
+  <p class="hint">Module 4 uses a mock login (any non-empty username/password).</p>
+
+  <form (ngSubmit)="submit()" #loginForm="ngForm">
+    <label>
+      Username
+      <input name="username" [(ngModel)]="username" required />
+    </label>
+
+    <label>
+      Password
+      <input name="password" type="password" [(ngModel)]="password" required />
+    </label>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+</div>
